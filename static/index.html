@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>THE SWAP</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="phone">
+    <header>
+      <h1>THE SWAP</h1>
+      <span class="limit" id="engine"></span>
+    </header>
+
+    <section id="login" hidden>
+      <form id="login-form">
+        <h2>Log in</h2>
+        <label for="email">Email</label>
+        <input id="email" type="email" autocomplete="username" required>
+        <label for="password">Password</label>
+        <input id="password" type="password" autocomplete="current-password" required>
+        <button type="submit">Log in</button>
+        <p class="error" id="login-error"></p>
+      </form>
+    </section>
+
+    <div id="app" hidden>
+      <div class="who">
+        <span id="who"></span>
+        <button id="logout" class="ghost small" type="button">Log out</button>
+      </div>
+      <main id="screen"></main>
+      <nav id="tabs"></nav>
+    </div>
+
+    <p class="toast" id="toast" hidden></p>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
